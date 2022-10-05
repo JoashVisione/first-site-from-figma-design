@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'TT Norms Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('TT Norms Pro'), url('./fonts/TTNorms-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    font-style: normal;
+    font-weight: lighter;
+    src: local('TT Norms Pro'), url('./fonts/TTNorms-Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'TT Norms Pro';
+    font-style: normal;
+    font-weight: bold;
+    src: local('TT Norms Pro'), url('./fonts/TTNorms-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    font-style: italic;
+    font-weight: normal;
+    src: local('TT Norms Pro'), url('./fonts/TTNorms-Italic.woff') format('woff');
+}
+
+:root {
+    --myfont: "TT Norms Pro",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;   
+}
+
+/* General */
+body { 
+    font-size: 100%;
+    margin: 0;
+}
+
+.normal-text {
+    font-size: 100%;
+    font-family: var(--myfont);
+    color: #7A7A7A;
+}
+
+.heading-text {
+    font-size: 200%;
+    font-family: var(--myfont);                                      
+    color: black !important;
+    font-weight: bold;
+}
+
+.section {
+    width: 100%;
+    height: 90vh;
+    padding-top: 10vh;
+}
+
+.image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* Menubar */
+#menubar {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    padding: 1%;
+}
+
+#menubar .menu-item {
+    display: inline;
+}
+
+#menubar .menu-item a {
+    text-decoration: none;
+    float: right;
+    color: #7A7A7A !important;
+    padding: 2%;
+}
+
+#menu-logo {
+    display: inline;
+}
+
+#menu-logo .image {
+    width: 150px;
+    height: 30px;
+    background-image: url(images/logo_header.png);
+    display: inline-block;
+    padding: 0.2%;
+}
+/* Home */
+#home-section {
+    background-size: contain;
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: 0;
+}
+
+#home-title {
+    width: fit-content  ;
+    position: relative;
+    top: 30%;
+    left: 60%;
+}
+/* About */
+#about-title {
+    text-align: center;
+}
+
+#about-sub-sections {
+    height: 100%;
+    padding: 0.5%;
+    position: relative;
+}
+
+.about-sub-image {
+    width: 50%;
+    height: 120%;
+    display: inline-block;
+}
+
+.about-sub-text {
+    width: 50%;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+}
+
+#about-1 {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    top: 0;
+}
+
+#about-1 .about-sub-image {
+    background-image: url(images/about_one.png);
+}
+
+#about-2 {
+    width: 100%;
+    height: 40%;
+    position: relative;
+}
+#about-2 .about-sub-image {
+    background-image: url(images/about_two.png);
+    float: right;
+}
+
+#about-2 .about-sub-text {
+    text-align: right;
+}
+/* Contact */
+#contact-title {
+    text-align: center;
+}
+
+#contact-sub-sections {
+    width: 30%;
+    position: relative;
+    left:  35%;
+    padding: 5% 5%;
+}
+
+#contact-sub-sections p {
+    margin: 0;
+    padding: 0.2%;
+    position: absolute;
+    top: 25%;
+    display: inline-block;
+}
+
+#contact-phone .image {
+    background-image: url(images/icon_call.png);
+}
+
+#contact-email .image {
+    background-image: url(images/icon_email.png);
+}
+
+#contact-location .image {
+    background-image: url(images/icon_location.png);
+}
+
+#contact-location, #contact-phone, #contact-email {
+    position: relative;
+}
+
+#contact-sub-sections .image{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+/* Footer 1544EC*/ 
+#footer {
+    background-color: #1544EC;
+    position: relative;
+    bottom: 0;
+    padding: 2% 20%;
+}
+
+#footer div{
+    color: white !important;
+}
+
+#footer-logo {
+    display: inline-block;
+}
+
+#footer-logo .image {
+    width: 150px;
+    height: 80px;
+    background-image: url(images/logo_footer.png);
+}
+
+#footer-links {
+    display: inline-block;
+    padding: 2% 0 2% 50%;
+}
+
+#footer-links p {
+    text-decoration: underline;
+}
+
+#footer-links a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
